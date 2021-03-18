@@ -8,3 +8,8 @@ Foi meu primeiro software de importancia, chegou a ser implementado e operar no 
 * Registrar os atendimentos, o problema e qual solução criada
 * Fornecer relatorios de atendimento, atendimento por usuário, cliente e etc
 * Exportava um .txt mensal com os atendimentos, similar ao processo adotado anterior ao uso do software
+
+# Screnshoots
+![Tela Inicial](https://github.com/edenilsonbila/PrimeSuporte/blob/main/Resources/Tela%20Inicial.png?raw=true)
+![Cadastro de Procedimentos Técnicos](https://github.com/edenilsonbila/PrimeSuporte/blob/main/Resources/CadProcedimentos.png)
+![Registrar Atendimento](https://github.com/edenilsonbila/PrimeSuporte/blob/main/Resources/RegAtendimento.png)
