@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD33C828-AF64-4732-B5EC-1AC95330EBAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prime</RootNamespace>
+    <AssemblyName>Prime Suporte</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\TESTE\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8AAAD6585E5B7216291B34258B191CF68D87C046</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Gerenciador_Atendimentos_Suporte.Danilo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FormatFactoryFormatFactoryIconeee.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>..\packages\CrystalDecisions.CrystalReports.Engine.1.0.0\lib\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>..\packages\CrystalDecisions.ReportSource.1.0.0\lib\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>..\packages\CrystalDecisions.Shared.1.0.0\lib\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web">
+      <HintPath>..\packages\Crystal.Reports.Essentials.13.0.15.1840\lib\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <HintPath>..\packages\CrystalDecisions.Windows.Forms.1.0.0\lib\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web.v20, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_Conexao.cs" />
+    <Compile Include="Criptografia.cs" />
+    <Compile Include="CrystalReport5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVisuProc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVisuProc.Designer.cs">
+      <DependentUpon>FrmVisuProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_analise_atendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_analise_atendentes.Designer.cs">
+      <DependentUpon>frm_analise_atendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_atendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_atendimento.Designer.cs">
+      <DependentUpon>frm_atendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_cliente.Designer.cs">
+      <DependentUpon>frm_cadastro_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cadastro_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cadastro_usuario.Designer.cs">
+      <DependentUpon>frm_cadastro_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CadProc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CadProc.Designer.cs">
+      <DependentUpon>frm_CadProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_config_parametros_db.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_config_parametros_db.Designer.cs">
+      <DependentUpon>frm_config_parametros_db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_destinatarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_destinatarios.Designer.cs">
+      <DependentUpon>frm_destinatarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EditarFila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EditarFila.Designer.cs">
+      <DependentUpon>Frm_EditarFila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Email.Designer.cs">
+      <DependentUpon>frm_Email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ExportarTxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ExportarTxt.Designer.cs">
+      <DependentUpon>frm_ExportarTxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filtro_relatorio_atendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filtro_relatorio_atendimento.Designer.cs">
+      <DependentUpon>frm_filtro_relatorio_atendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_HistoricoFila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_HistoricoFila.Designer.cs">
+      <DependentUpon>Frm_HistoricoFila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_historico_atendimento_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_historico_atendimento_cliente.Designer.cs">
+      <DependentUpon>frm_historico_atendimento_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_monitoramento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_monitoramento.Designer.cs">
+      <DependentUpon>frm_monitoramento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NovoFila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NovoFila.Designer.cs">
+      <DependentUpon>frm_NovoFila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pesquisa_atendimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pesquisa_atendimentos.Designer.cs">
+      <DependentUpon>frm_pesquisa_atendimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pesquisa_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pesquisa_cliente.Designer.cs">
+      <DependentUpon>frm_pesquisa_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pesquisa_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pesquisa_usuario.Designer.cs">
+      <DependentUpon>frm_pesquisa_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_principal.Designer.cs">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_procedimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_procedimentos.Designer.cs">
+      <DependentUpon>frm_procedimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_registrar_SA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_registrar_SA.Designer.cs">
+      <DependentUpon>frm_registrar_SA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relatorio_atendimentosxusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relatorio_atendimentosxusuario.Designer.cs">
+      <DependentUpon>frm_relatorio_atendimentosxusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_visualizacao_de _Atendimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_visualizacao_de _Atendimentos.Designer.cs">
+      <DependentUpon>frm_visualizacao_de _Atendimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcoes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVisuProc.resx">
+      <DependentUpon>FrmVisuProc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_analise_atendentes.resx">
+      <DependentUpon>frm_analise_atendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_atendimento.resx">
+      <DependentUpon>frm_atendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_cliente.resx">
+      <DependentUpon>frm_cadastro_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cadastro_usuario.resx">
+      <DependentUpon>frm_cadastro_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CadProc.resx">
+      <DependentUpon>frm_CadProc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_config_parametros_db.resx">
+      <DependentUpon>frm_config_parametros_db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_destinatarios.resx">
+      <DependentUpon>frm_destinatarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EditarFila.resx">
+      <DependentUpon>Frm_EditarFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Email.resx">
+      <DependentUpon>frm_Email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ExportarTxt.resx">
+      <DependentUpon>frm_ExportarTxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filtro_relatorio_atendimento.resx">
+      <DependentUpon>frm_filtro_relatorio_atendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_HistoricoFila.resx">
+      <DependentUpon>Frm_HistoricoFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_historico_atendimento_cliente.resx">
+      <DependentUpon>frm_historico_atendimento_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_monitoramento.resx">
+      <DependentUpon>frm_monitoramento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NovoFila.resx">
+      <DependentUpon>frm_NovoFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pesquisa_atendimentos.resx">
+      <DependentUpon>frm_pesquisa_atendimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pesquisa_cliente.resx">
+      <DependentUpon>frm_pesquisa_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pesquisa_usuario.resx">
+      <DependentUpon>frm_pesquisa_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_principal.resx">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_procedimentos.resx">
+      <DependentUpon>frm_procedimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_registrar_SA.resx">
+      <DependentUpon>frm_registrar_SA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relatorio_atendimentosxusuario.resx">
+      <DependentUpon>frm_relatorio_atendimentosxusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_visualizacao_de _Atendimentos.resx">
+      <DependentUpon>frm_visualizacao_de _Atendimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Gerenciador_Atendimentos_Suporte.Danilo_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo Sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormatFactoryFormatFactoryIconeee.ico" />
+    <None Include="Resources\logo bila.jpg" />
+    <None Include="Resources\magnifying-glass-189254_6401.png" />
+    <None Include="Resources\SetaDireita.png" />
+    <None Include="Resources\setas_2544_Run2.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\teste.png" />
+    <None Include="Resources\magnifying-glass-189254_640.png" />
+    <None Include="Resources\Prime Suporte1.png" />
+    <None Include="Resources\Prime Suporte.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
